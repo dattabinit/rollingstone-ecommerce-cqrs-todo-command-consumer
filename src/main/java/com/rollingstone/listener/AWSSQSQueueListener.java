@@ -30,6 +30,8 @@ public class AWSSQSQueueListener {
 		
 		Todo todo = todoCommand.getTodo();
 		
+		logger.info("We received the TodoCommand Message Header as : " + type);
+		
 		logger.info("The Todo We Received is :"+todo.toString());
 		
 		if (type.equalsIgnoreCase(GenericCommandType.CREATE_TODO.toString())) {
