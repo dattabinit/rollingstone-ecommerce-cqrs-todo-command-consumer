@@ -40,5 +40,8 @@ public class AWSSQSQueueListener {
 		else if (type.equalsIgnoreCase(GenericCommandType.UPDATE_TODO.toString())){
 			todoService.saveTodo(todo);
 		}
+		else if (type.equalsIgnoreCase(GenericCommandType.DELETE_TODO.toString())){
+			todoService.deleteTodo(todo);
+		}
 	}
 }

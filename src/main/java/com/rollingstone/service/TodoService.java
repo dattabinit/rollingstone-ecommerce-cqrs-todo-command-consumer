@@ -46,5 +46,9 @@ public class TodoService {
 	public void saveTodo(Todo todo) {
 		todoRepository.save(todo);
 	}
+	
+	public void deleteTodo(Todo todo) {
+		todoRepository.delete(todo);
+	}
 
 }
